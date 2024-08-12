@@ -37,9 +37,9 @@ public class CallerApp {
     }
 
     public boolean updateContact(Contact oldContact, Contact newContact) {
-        int contact = contacts.indexOf(oldContact);
-        if (contact != -1) {
-            contacts.set(contact, newContact);
+        int index = contacts.indexOf(oldContact);
+        if (index != -1) {
+            contacts.set(index, newContact);
             return true;
         }
         return false; 
